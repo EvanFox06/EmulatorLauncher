@@ -8,7 +8,7 @@ from PIL import Image
 class Emulators:
     class Emulator:
         """
-        Stores the information of an emulator
+        Stores the information about an emulator
         Should never be constructed directly
         """
         def __init__(self, sid: str, ext: str, gh_path: str):

@@ -17,5 +17,5 @@ mgba/*
 !mgba/mgba
 !mgba/mgba.png
 
-rom zips
+rom zips/*
 Emulators.desktop
