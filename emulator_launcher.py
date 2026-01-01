@@ -139,9 +139,9 @@ class AddGame(ctk.CTkToplevel):
     @staticmethod
     def game_choice():
         """
-        :return: The game files in the rom zips folder (excludes zip and 7z files)
+        :return: The game files in the roms folder (excludes zip and 7z files)
         """
-        games = sorted([f for f in os.listdir('rom zips') if os.path.splitext(f)[1] not in ('.zip', '.7z')])
+        games = sorted([f for f in os.listdir('roms') if os.path.splitext(f)[1] not in ('.zip', '.7z')])
         if not games:
             return ['']
         return games
@@ -160,7 +160,7 @@ class AddGame(ctk.CTkToplevel):
 
         # create a directory for the game and put the game file in there
         os.mkdir(os.path.join(emu.id, name))
-        os.rename(f'rom zips/{file}', os.path.join(emu.id, name, f'game.{ext}'))
+        os.rename(f'roms/{file}', os.path.join(emu.id, name, f'game.{ext}'))
         # download the icon from the inputted URL and save it into the game directory
         icon_path = os.path.join(emu.id, name, 'icon.png')
         try:

@@ -1,21 +1,4 @@
 __pycache__
 .idea
 
-azahar/*
-!azahar/azahar
-!azahar/azahar.png
-
-dolphin/*
-!dolphin/dolphin
-!dolphin/dolphin.png
-
-melonds/*
-!melonds/melonds
-!melonds/melonds.png
-
-mgba/*
-!mgba/mgba
-!mgba/mgba.png
-
-rom zips/*
 Emulators.desktop
