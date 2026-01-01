@@ -1,0 +1,6 @@
+#!/bin/bash
+if [ $# -eq 0 ]; then
+  flatpak run org.DolphinEmu.dolphin-emu -u /home/evanfox/Emulators/dolphin/dolphin.config
+else
+  flatpak run org.DolphinEmu.dolphin-emu -u /home/evanfox/Emulators/dolphin/dolphin.config -b -e "$1"
+fi
