@@ -255,7 +255,7 @@ class App(ctk.CTk):
         if app_name is None:
             app_name = dir_name
         return [d for d in os.listdir(dir_name) if d not in
-                (app_name, app_name + '.config', app_name + '.home', app_name + '.png')]
+                (app_name, app_name + '.config', app_name + '.home', app_name + '.png', '.gitignore')]
 
 
 if __name__ == '__main__':
